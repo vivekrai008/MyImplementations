@@ -6,7 +6,8 @@ int i;
 
 int depth()
 {
-    if(str[i++] == 'l') {
+    i++;
+    if(str[i - 1] == 'l') {
         return 1;
     }
     return max(depth(), depth()) + 1;
